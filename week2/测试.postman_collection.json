@@ -1,0 +1,83 @@
+{
+	"info": {
+		"_postman_id": "8e6acce5-a7ff-47cc-9bf2-3e735b10fed9",
+		"name": "测试",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2503639"
+	},
+	"item": [
+		{
+			"name": "id查user",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "查list",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "add user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Username\":\"wangwu\",\"Password\":\"123\",\"Phone\":\"152666666555\",\"CreateTime\":\"2022-06-27T02:09:48Z\",\"UpdateTime\":\"2022-06-27T02:09:48Z\",\"IsDeleted\":false}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"add"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"Username\":\"wangwu\",\"Password\":\"123\",\"Phone\":\"152666666555\",\"CreateTime\":\"2022-06-27T02:09:48Z\",\"UpdateTime\":\"2022-06-27T02:09:48Z\",\"IsDeleted\":false}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/user/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
